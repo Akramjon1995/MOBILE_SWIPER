@@ -1,0 +1,120 @@
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tool-menu-wrapper {
+    z-index: 99;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    padding: 16px 16px 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.1);
+}
+.tool-menu {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(242, 243, 244, 1);
+    border-radius: 20px;
+}
+.line-wrapper {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    bottom: 8px;
+    left: 0;
+}
+.bottom-line {
+    width: 150px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #3f3f3f;
+}
+.main-swapper {
+    scroll-snap-align: start;
+    padding: 16px 0;
+}
+.swiper-container {
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    position: fixed;
+    padding: 8px 16px 8px;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.1);
+    height: 0;
+}
+.swiper-container.swiper {
+    transition-duration: 0.4s;
+}
+.swiper-container.remover {
+    height: 0!important;
+    transition: ease-in-out 0.4s;
+}
+.swipe-content {
+    overflow-y: scroll;
+    flex-flow: column nowrap;
+    scroll-snap-type: y proximity;   
+}
+.swipe-content::-webkit-scrollbar {
+    display: none;
+  }
+.top-line-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.top-line {
+    width: 50px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #cdcaca;
+}
+.restaurant-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.restaurant-icon {
+    width: 40px;
+    height: 40px;
+    background: #cdcaca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.left-wrapper {
+    display: flex;
+    align-items: center;
+}
+.title-wrapper {
+    margin-left: 8px;
+}
+
+.demo {
+    margin-top: 20px;
+    width: 100%;
+    height: 70px;
+    background-color: aqua;
+}
+.button {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #f79f19;
+    color: #123b64;
+    font-size: 16px;
+    font-weight: 500;
+}

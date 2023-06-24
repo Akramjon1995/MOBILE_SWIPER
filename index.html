@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div id="touch-area">
+            <div class="top-line-wrapper">
+                <div class="top-line"></div>
+            </div>
+            <div class="main-swapper">
+                <div class="restaurant-wrapper">
+                    <div class="left-wrapper">
+                        <div class="restaurant-icon">R</div>
+                        <div class="title-wrapper">
+                            <p>Reastaurant</p>
+                            <p>30 lieux</p>
+                        </div>
+                    </div>
+                    <div onclick="removeSwiper()" class="restaurant-icon">x</div>
+                </div>
+            </div>
+        </div>
+        <div class="swipe-content">
+            <div class="demo"></div>
+            <div class="demo"></div>
+            <div class="demo"></div>
+        </div>
+    </div>
+    <div>
+        <button onclick="showSwiper()" class="button">show swiper</button>
+    </div>
+    <div class="tool-menu-wrapper">
+        <div class="tool-menu">
+            <div class="icon">A</div>
+            <div class="icon">B</div>
+            <div class="icon">C</div>
+            <div class="icon">D</div>
+            <div class="icon">E</div>
+        </div>
+        <div class="line-wrapper">
+            <div class="bottom-line"></div>
+        </div>
+    </div>
+    <script src="./index.js"/></script>
+</body>
+</html>
